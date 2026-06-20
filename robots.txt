@@ -1,0 +1,38 @@
+# Robots.txt for Pallab Films
+# Wedding Video Editor Portfolio
+# Last updated: 2026
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /images/
+Allow: /videos/
+Disallow: /.git/
+Disallow: /.codex/
+Disallow: /.agents/
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: *?debug=true
+Crawl-delay: 1
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://pallabfilms.com/sitemap.xml
