@@ -106,10 +106,35 @@ const updateDashboardTime = () => {
 updateDashboardTime();
 setInterval(updateDashboardTime, 30000);
 
-contactForm.addEventListener("submit", (event) => {
+contactForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  formStatus.textContent = "Thanks. Your message is ready to send from your connected form service.";
-  contactForm.reset();
+
+  const submitButton = contactForm.querySelector("button[type='submit']");
+  const formData = new FormData(contactForm);
+
+  formStatus.textContent = "Sending...";
+  submitButton.disabled = true;
+
+  try {
+    const response = await fetch(contactForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error("Form submission failed");
+    }
+
+    formStatus.textContent = "Thank you! Your message has been sent.";
+    contactForm.reset();
+  } catch (error) {
+    formStatus.textContent = "Sorry, something went wrong. Please try again.";
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 
 window.addEventListener("keydown", (event) => {
