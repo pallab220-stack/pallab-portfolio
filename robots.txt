@@ -35,4 +35,4 @@ User-agent: AhrefsBot
 Disallow: /
 
 # Sitemap location
-Sitemap: https://pallabfilms.com/sitemap.xml
+Sitemap: https://pallab-portfolio-pi.vercel.app/sitemap.xml
