@@ -3,10 +3,349 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pallab Films</title>
+  <title>Pallab Films | Cinematic Wedding Video Editor</title>
+  <meta name="description" content="Premium cinematic wedding video editing portfolio for Pallab Films.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Pallab Films</h1>
-  <p>Wedding Video Editor For Filmmakers</p>
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Pallab Films home">
+      <span>Pallab</span>
+      <strong>Films</strong>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" data-nav>
+      <a href="#about">About</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#usa">USA</a>
+      <a href="#bangladesh">Bangladesh</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/usa1.jpg">
+        <source src="videos/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">Luxury wedding film editing</p>
+        <h1>Pallab Films</h1>
+        <p class="hero-copy">Cinematic wedding edits for filmmakers, studios, and couples who want every frame to feel timeless.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#usa">View Portfolio</a>
+          <a class="button button-ghost" href="#contact">Start a Project</a>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <span>Remote editor</span>
+        <strong>USA + Bangladesh weddings</strong>
+      </div>
+    </section>
+
+    <section class="stats band" aria-label="Pallab Films highlights">
+      <div class="stat reveal">
+        <strong>50+</strong>
+        <span>Wedding projects</span>
+      </div>
+      <div class="stat reveal">
+        <strong>3+</strong>
+        <span>Years editing</span>
+      </div>
+      <div class="stat reveal">
+        <strong>4K</strong>
+        <span>Premium delivery</span>
+      </div>
+      <div class="stat reveal">
+        <strong>100%</strong>
+        <span>Remote workflow</span>
+      </div>
+    </section>
+
+    <section class="section about cinematic-bg" id="about">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+      <div class="about-premium">
+        <div class="profile-card reveal">
+          <div class="profile-frame">
+            <img src="images/usa5.jpg" alt="Pallab Debnath profile portrait">
+          </div>
+          <div class="profile-caption">
+            <span>Lead Wedding Film Editor</span>
+            <strong>Pallab Debnath</strong>
+          </div>
+        </div>
+
+        <div class="about-story">
+          <p class="section-kicker reveal">About Me</p>
+          <h2 class="section-title reveal">Story-first wedding films with a premium cinematic finish.</h2>
+          <div class="about-copy reveal">
+            <p>Hi, I am Pallab Debnath, the editor behind Pallab Films. I help wedding filmmakers and creative studios turn raw wedding footage into polished films that feel emotional, elegant, and cinematic.</p>
+            <p>My editing style is built around timing, music, clean dialogue, luxury color tone, and story flow. From intimate teasers to full wedding highlights, I shape each project so the couple's day feels honest, refined, and unforgettable.</p>
+            <div class="about-signature">
+              <span>Signature Workflow</span>
+              <strong>Story Edit - Sound Polish - Color Finish - Studio Delivery</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section project-dashboard cinematic-bg" id="dashboard">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+
+      <div class="dashboard-heading reveal">
+        <div>
+          <p class="section-kicker">Project Dashboard</p>
+          <h2 class="section-title">Real-time studio workflow.</h2>
+        </div>
+        <div class="dashboard-live">
+          <span class="live-dot"></span>
+          <strong>Live Pipeline</strong>
+          <small data-dashboard-time>Updating now</small>
+        </div>
+      </div>
+
+      <div class="dashboard-metrics">
+        <article class="metric-card reveal">
+          <span>Active Projects</span>
+          <strong data-count="8">0</strong>
+          <p>Films currently moving through edit, audio, and color.</p>
+        </article>
+        <article class="metric-card reveal">
+          <span>Delivered Projects</span>
+          <strong data-count="54">0</strong>
+          <p>Completed wedding films delivered to studios and clients.</p>
+        </article>
+        <article class="metric-card reveal">
+          <span>Projects Under Review</span>
+          <strong data-count="3">0</strong>
+          <p>Edits awaiting notes, approvals, and final polish.</p>
+        </article>
+      </div>
+
+      <div class="status-grid">
+        <article class="status-card editing reveal">
+          <div class="status-top">
+            <span class="status-icon">🔄</span>
+            <small>Editing</small>
+          </div>
+          <h3>New York Highlight Film</h3>
+          <div class="progress-track"><span style="width: 68%"></span></div>
+          <p>Timeline structure, music pacing, and emotional story beats.</p>
+        </article>
+        <article class="status-card review reveal">
+          <div class="status-top">
+            <span class="status-icon">👀</span>
+            <small>Review</small>
+          </div>
+          <h3>Texas Wedding Teaser</h3>
+          <div class="progress-track"><span style="width: 86%"></span></div>
+          <p>Client preview sent with notes window open.</p>
+        </article>
+        <article class="status-card color reveal">
+          <div class="status-top">
+            <span class="status-icon">🎨</span>
+            <small>Color Grading</small>
+          </div>
+          <h3>Dhaka Reception Film</h3>
+          <div class="progress-track"><span style="width: 74%"></span></div>
+          <p>Warm gold tone, clean skin color, and final look balance.</p>
+        </article>
+        <article class="status-card delivered reveal">
+          <div class="status-top">
+            <span class="status-icon">✅</span>
+            <small>Delivered</small>
+          </div>
+          <h3>California Ceremony Edit</h3>
+          <div class="progress-track"><span style="width: 100%"></span></div>
+          <p>Final exports delivered in studio-ready formats.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section portfolio cinematic-bg" id="usa">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Portfolio</p>
+        <h2 class="section-title">USA Wedding Portfolio</h2>
+      </div>
+      <div class="portfolio-grid">
+        <article class="portfolio-card reveal">
+          <img src="images/usa1.jpg" alt="Luxury USA wedding film">
+          <div>
+            <span>Highlight Film</span>
+            <h3>Luxury Wedding Film</h3>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <img src="images/usa2.jpg" alt="Cinematic wedding teaser">
+          <div>
+            <span>Teaser</span>
+            <h3>Golden Hour Promise</h3>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <img src="images/usa3.jpg" alt="USA wedding highlight edit">
+          <div>
+            <span>Feature Edit</span>
+            <h3>Editorial Wedding Highlight</h3>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <img src="images/usa4.jpg" alt="Destination wedding film">
+          <div>
+            <span>Destination</span>
+            <h3>Destination Wedding Story</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section portfolio cinematic-bg" id="bangladesh">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Portfolio</p>
+        <h2 class="section-title">Bangladesh Wedding Portfolio</h2>
+      </div>
+      <div class="portfolio-grid two-column">
+        <article class="portfolio-card reveal">
+          <img src="images/bd1.jpg" alt="Bangladesh wedding highlight">
+          <div>
+            <span>Highlight Film</span>
+            <h3>Traditional Wedding Highlight</h3>
+          </div>
+        </article>
+        <article class="portfolio-card reveal">
+          <img src="images/bd2.jpg" alt="Bangladesh reception film">
+          <div>
+            <span>Reception</span>
+            <h3>Reception Story Film</h3>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section services cinematic-bg" id="services">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Services</p>
+        <h2 class="section-title">Built for wedding studios that need polish and speed.</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal"><span>01</span><h3>Wedding Highlight Films</h3><p>Emotional 3-8 minute films with clean story structure.</p></div>
+        <div class="service-card reveal"><span>02</span><h3>Wedding Teasers</h3><p>Short cinematic edits for launches and social campaigns.</p></div>
+        <div class="service-card reveal"><span>03</span><h3>Color Grading</h3><p>Warm, elegant color with consistent skin tones.</p></div>
+        <div class="service-card reveal"><span>04</span><h3>Audio Enhancement</h3><p>Dialogue cleanup, music mixing, and polished ceremony audio.</p></div>
+        <div class="service-card reveal"><span>05</span><h3>Social Media Reels</h3><p>Vertical edits designed for Instagram, TikTok, and ads.</p></div>
+        <div class="service-card reveal"><span>06</span><h3>Multi-Cam Editing</h3><p>Synced ceremony and reception edits with clean pacing.</p></div>
+      </div>
+    </section>
+
+    <section class="section pricing cinematic-bg" id="pricing">
+      <div class="luxury-motion-bg" aria-hidden="true">
+        <span class="glow glow-one"></span>
+        <span class="glow glow-two"></span>
+        <span class="particle-field"></span>
+        <span class="film-noise"></span>
+      </div>
+      <div class="section-heading reveal">
+        <p class="section-kicker">Pricing</p>
+        <h2 class="section-title">Simple packages for premium wedding edits.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card reveal">
+          <p>Starter</p>
+          <h3>$100</h3>
+          <span>3-5 minute highlight film</span>
+          <a href="#contact">Choose Starter</a>
+        </article>
+        <article class="price-card featured reveal">
+          <p>Professional</p>
+          <h3>$200</h3>
+          <span>Highlight film plus wedding teaser</span>
+          <a href="#contact">Choose Professional</a>
+        </article>
+        <article class="price-card reveal">
+          <p>Custom</p>
+          <h3>Let's Talk</h3>
+          <span>Full weddings, reels, bulk studio workflow</span>
+          <a href="#contact">Request Quote</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-layout">
+        <div class="reveal">
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Tell me about your next wedding film.</h2>
+          <p class="contact-note">Share your footage type, desired film length, deadline, and reference style. I will reply with availability and the best package.</p>
+        </div>
+
+        <form class="contact-form reveal" data-contact-form>
+          <label>
+            <span>Your Name</span>
+            <input type="text" name="name" placeholder="Pallab Debnath" required>
+          </label>
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="email" placeholder="you@example.com" required>
+          </label>
+          <label>
+            <span>Project Details</span>
+            <textarea name="message" placeholder="Tell me about the wedding edit..." required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+          <p class="form-status" data-form-status aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span>Pallab</span><strong>Films</strong></a>
+    <p>Wedding video editor for filmmakers and studios.</p>
+    <span>© 2026 Pallab Films. All rights reserved.</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
