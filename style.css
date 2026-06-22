@@ -142,7 +142,7 @@ a {
   overflow: hidden;
 }
 
-.hero-video,
+.hero-image,
 .hero-shade {
   position: absolute;
   inset: 0;
@@ -150,9 +150,11 @@ a {
   height: 100%;
 }
 
-.hero-video {
+.hero-image {
   object-fit: cover;
+  object-position: center;
   opacity: 0.78;
+  pointer-events: none;
 }
 
 .hero-shade {
