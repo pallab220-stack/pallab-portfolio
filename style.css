@@ -595,6 +595,11 @@ a {
   text-transform: uppercase;
 }
 
+#about {
+  padding-top: clamp(100px, 12vw, 165px);
+  padding-bottom: clamp(100px, 12vw, 165px);
+}
+
 .about-story {
   max-width: 820px;
 }
