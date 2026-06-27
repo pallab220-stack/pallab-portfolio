@@ -1012,6 +1012,49 @@ a {
   color: var(--text);
 }
 
+/* ── Recent Work Section ────────────────────── */
+.recent-work {
+  border-top: 1px solid rgba(217, 180, 91, 0.18);
+}
+
+.recent-work .section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.recent-work .section-kicker::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(217, 180, 91, 0.7), 0 0 28px rgba(217, 180, 91, 0.35);
+  animation: recentPulse 2s ease-in-out infinite;
+}
+
+@keyframes recentPulse {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.4); }
+}
+
+.recent-work-single {
+  max-width: 820px;
+  margin-inline: auto;
+}
+
+.recent-work-single .video-card {
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.55), 0 0 48px rgba(217, 180, 91, 0.1);
+}
+
+.video-description {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 .services-grid,
 .pricing-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
